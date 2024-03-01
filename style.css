@@ -1,0 +1,93 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.main {
+    width: 100%; /* Adjusted to full width */
+    max-width: 800px; /* Set a maximum width */
+    margin: 0 auto; /* Center the main container horizontally */
+    padding: 0 20px; /* Add padding to the sides */
+}
+
+.register h2 {
+    height: 50px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px; /* Reduced margin */
+    background-color: #FFBE98;
+    border-radius: 8px;
+    margin-bottom: 20px; /* Reduced margin */
+    font-family: Montserrat;
+    margin-left: 15px;
+}
+
+.register label {
+    font-size: 1rem; /* Adjusted font size */
+    padding: 15px; /* Reduced padding */
+    font-family: Montserrat;
+}
+
+.register input[type="text"],
+.register input[type="number"],
+.register input[type="email"],
+.register input[type="date"],
+.register select {
+    height: 35px;
+    width: 80%; /* Adjusted width */
+    margin-top: 5px; /* Reduced margin */
+    margin-left: 15px;
+    margin-bottom: 10px; /* Added bottom margin */
+    border-radius: 5px;
+    background-color: #FEECE2;
+    border: 1px solid #FFBE98;
+    padding: 0 10px; /* Adjusted padding */
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    font-family: Montserrat;
+}
+
+#btn {
+    height: 40px;
+    width: 60%; /* Adjusted width */
+    margin-top: 20px; /* Reduced margin */
+    background-color: blue;
+    color: white; /* Changed text color */
+    font-size: 1.5rem; /* Adjusted font size */
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-family: Montserrat;
+    margin-left: 15px;
+    margin-left: 90px;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 600px) {
+    .main {
+        padding: 0 10px; /* Adjusted padding */
+    }
+
+    .register h2 {
+        font-size: 1.2rem; /* Adjusted font size */
+    }
+
+    .register label {
+        font-size: 0.9rem; /* Adjusted font size */
+    }
+
+    .register input[type="text"],
+    .register input[type="number"],
+    .register input[type="email"],
+    .register select {
+        font-size: 0.9rem; /* Adjusted font size */
+    }
+
+    #btn {
+        font-size: 1rem; /* Adjusted font size */
+    }
+}

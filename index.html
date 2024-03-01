@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <meta name="viewport" content="width=device-width,
+      initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="register">
+            <h2>Registration Form</h2>
+            <br>
+            <form id="register" method="post">
+                <label>First Name</label>
+                <br>
+                <input type="text" name="fname" id="name" placeholder="First Name">
+                <br><br>
+                <label>Last Name</label>
+                <br>
+                <input type="text" name="lname" id="name" placeholder="Last Name">
+                <br><br>
+                <label>Mobile Number</label>
+                <br>
+                <input type="number" name="mobileno" id="mobileno" placeholder="Mobile Number">
+                <br><br>
+                <label>Email </label>
+                <br>
+                <input type="email" name="email" id="email" placeholder="Email">
+                <br><br>
+                <label>Birth Date</label><br>
+                <input type="date" id="birthdate" name="birthdate" placeholder="birthdate"><br><br>
+
+                <label for="class-options">Course Appearing For</label>
+                <br>
+                <select name="class-options" id="class-options">
+                    <option value="">Select an option</option>
+                    <option value="नगर परिषद भरती">नगर परिषद भरती </option>
+                    <option value="राज्यसेवा">राज्यसेवा</option>
+                    <option value="PSI/STI/ASO">PSI/STI/ASO</option>
+                    <option value="M.I.D.C भरती">M.I.D.C भरती</option>
+                    <option value="करसहाय्यक">करसहाय्यक</option>
+                    <option value="लिपिक">लिपिक </option>
+                    <option value="तलाठी">तलाठी</option>
+                    <option value="पुलिस भरती ">पुलिस भरती </option>
+                    <option value="जलसंपदा भरती">जलसंपदा भरती</option>
+                    <option value="रेल्वे भरती">रेल्वे भरती</option>
+                    <option value="ग्रामसेवक">ग्रामसेवक </option>
+                    <option value="GD कॉन्स्टेबल">GD कॉन्स्टेबल </option>
+                    <option value="वन विभाग भरती">वन विभाग भरती</option>
+                    <option value="वित्त विभाग भरती">वित्त विभाग भरती</option>
+                </select><br><br>
+
+                <label for="payment-options">Payment Options</label>
+                    <select id="payment-options" name="payment-options" required>
+                    <option value="">Select Payment Option</option>
+                    <option value="cash">Cash</option>
+                    <option value="card">Card</option>
+                    <option value="netbanking">Net Banking</option>
+                    <option value="upi">UPI</option>
+                </select><br><br>
+
+
+                <button id="btn">Submit</button>
+
+            </form>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
